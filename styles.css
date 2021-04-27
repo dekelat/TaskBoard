@@ -1,0 +1,98 @@
+*{
+    font-family: 'Architects Daughter';
+}
+
+body {
+    background-image: url(sources/cork.jpg);
+}
+
+h1 {
+    font-family: 'Atma';
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 60px;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+textarea {
+    background-image: url(sources/newtaskbg.png);
+    background-size: cover;
+    display: inline-block;
+    width: 70%;
+    padding: 35px 0px 0px 100px;
+    outline: none;
+    resize: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.deadline{
+    border:#ffeee6 solid 3px; 
+    border-radius: 5px;
+}
+
+.deadline > strong {
+    font-size: 22px; 
+    font-weight: 900;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white; 
+}
+
+.note {
+    background-image: url(sources/notebg.png);
+    background-size: cover;
+    display: inline-block;
+    height: 260px;
+    width: 210px;
+    padding: 20px 5px 0px 15px;
+    margin: 30px 5px;
+    vertical-align: top;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.task {
+    height: 150px;
+    width: 165px;
+    overflow: auto;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    white-space: pre-wrap;
+    margin-bottom: 5px;
+}
+
+.delete {
+    float: right;
+    margin-right: 20px;
+    background-color: transparent;
+    border: none;
+    visibility: hidden;
+}
+
+.note:hover .delete {
+    visibility: visible;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+  
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.hide {
+    display: none;
+}
+
+#errorMessage {
+    opacity: 90%;
+}
